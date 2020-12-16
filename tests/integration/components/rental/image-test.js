@@ -21,7 +21,7 @@ module('Integration | Component | rental/image', function(hooks) {
     assert.dom('.image').exists();
     assert.dom('.image img').hasAttribute('src', '/assets/images/teaching-tomster.png');
     assert.dom('.image img').hasAttribute('alt', 'Teaching Tomster');
-    
+  });
 
     test('clicking on the component toggles its size', async function(assert) {
       await render(hbs`
@@ -47,5 +47,4 @@ module('Integration | Component | rental/image', function(hooks) {
       assert.dom('.image small').hasText('View Larger');
     });
 
-  });
 });
